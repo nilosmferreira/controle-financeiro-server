@@ -35,4 +35,11 @@ export class User extends BaseEntity<UserProps> {
   get permissions() {
     return this.data.permissions;
   }
+  toggleActive() {
+    if (this.active) {
+      this.data.deleteAt = new Date();
+    } else {
+      this.data.deleteAt = undefined;
+    }
+  }
 }
