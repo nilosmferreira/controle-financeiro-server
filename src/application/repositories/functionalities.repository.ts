@@ -8,4 +8,5 @@ export abstract class FunctionalitiesRepository {
     limit?: number;
   }): Promise<Functionality[]>;
   abstract findById(id: string): Promise<Functionality>;
+  abstract findByCode(code: string): Promise<Functionality | undefined>;
 }

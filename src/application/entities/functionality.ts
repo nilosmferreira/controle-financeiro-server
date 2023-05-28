@@ -5,7 +5,7 @@ interface FunctionalityProsps {
   name: string;
   description: string;
 }
-export class Functionality extends BaseEntity<Functionality> {
+export class Functionality extends BaseEntity<FunctionalityProsps> {
   get code() {
     return this.data.code;
   }

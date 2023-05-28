@@ -24,4 +24,7 @@ export class InMemoryFunctionalitiesRepository
   async findById(id: string): Promise<Functionality> {
     return this.data.find((item) => item.id === id);
   }
+  async findByCode(code: string): Promise<Functionality | undefined> {
+    return this.data.find((item) => item.code === code);
+  }
 }

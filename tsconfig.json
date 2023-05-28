@@ -19,7 +19,8 @@
     "noFallthroughCasesInSwitch": false,
     "paths": {
       "@app/*": ["./src/application/*"],
-      "@shared/*": ["./src/infra/shared/*"]
+      "@infra/*": ["./src/infra/*"],
+      "@test/*": ["./test/*"]
     }
   }
 }
